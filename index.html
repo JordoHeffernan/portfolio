@@ -8,83 +8,105 @@
   <meta name="keywords" content="developer, portfolio, showcase, web developer, engineer, web design">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <script>(function (e) { e.className = e.className.replace('no-js', 'js'); }(document.documentElement));</script>
+  <link rel="stylesheet" href="index.css">
+  <link
+    href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono|Press+Start+2P|Roboto+Slab|Source+Code+Pro|Special+Elite"
+    rel="stylesheet">
 </head>
 
 <body>
   <header role="banner" class="site-header">
-    <nav class="site-header-quick-menu">
-      <ul class="flat-list">
-        <li><a class="menu-link a11y-kb-only" href="#about">About</a></li>
-        <li><a class="menu-link a11y-kb-only" href="#projects">Projects</a></li>
-        <li><a class="menu-link a11y-kb-only" href="#resume">Resume</a></li>
-      </ul>
-    </nav>
+    <!-- <div class="dropdown">
+      <button onclick="dropDownFunction()" class="dropbtn"><img
+          src="./images/icons/iconfinder_menu_293270.png"></button>
+      <div id="navigation" class="dropdown-content">
+        <a class="menu-link" href="#about">About</a>
+        <a class="menu-link" href="#projects">Projects</a>
+        <a class="menu-link" href="#resume">Resume</a>
+      </div>
+    </div> -->
+    <h1>My name is Jordan Heffernan. <br />I am a full stack web developer.<span class="blink">|</span></h1>
+
   </header>
 
   <main id="content" role="main" tabindex="-1">
-    <div id="contact">
-      <a class="contact-link" href="mailto:jheff2@gmail.com"><img alt="email link"
-          src="./icons/iconfinder_icon-ios7-email_211737.png"></a>
-      <a class="contact-link" href="https://github.com/JordoHeffernan"><img alt="Github icon"
-          src="./icons/iconfinder_github-square_1608907.png"></a>
-      <a class="contact-link" href="https://www.instagram.com/smeffles"><img alt="Instagram icon"
-          src="./icons/iconfinder_38-instagram_104466.png"></a>
-      <a class="contact-link" href="https://www.linkedin.com/in/jordanheffernan/"><img alt="LinkdIn icon"
-          src="./icons/iconfinder_icon-social-linkedin_211910.png"></a>
-    </div>
-    <div id="about">
-      <h1>Hello! My name is Jordan Heffernan. I'm a web developer.</h1>
-      <p>
-        I have always had an attraction to clean design and a curiousity for how
-        the world around me works. Web development has proven to be a perfect blend of
-        these passions. From thinking through the process of UX and designing appealing
-        UI to building well structured backends, the diversity of programming is
-        constantly a reward for my desire to learn.
+    <div id="about" class="section">
+      <img id="profile-pic" src="images/profile.jpg" alt="profile picture of man on patio with spoon on nose">
+      <div id="contact">
+        <a class="contact-link" href="https://github.com/JordoHeffernan" target="_blank"><img alt="Github icon"
+            src="./images/icons/iconfinder_github-square_1608907.png"></a>
+        <a class="contact-link" href="https://www.instagram.com/smeffles" target="_blank"><img alt="Instagram icon"
+            src="./images/icons/iconfinder_38-instagram_104466.png"></a>
+        <a class="contact-link" href="https://www.linkedin.com/in/jordanheffernan/" target="_blank"><img
+            alt="LinkdIn icon" src="./images/icons/linkedin-logo.png"></a>
+        <a class="contact-link" href="mailto:jheff2@gmail.com" target="_blank"><img alt="email link"
+            src="./images/icons/mail-black-envelope-symbol.svg"></a>
+      </div>
+      <h2>About Me</h2>
+      <div class="line"></div>
+      <span>
+        I am a developer with a unique background after working for nearly 10 years as a video
+        editor/post-procution supervisor. My main interests in develpment are building custom API solutions and
+        exploring the maze of constructing intuitive UX. That may sound somewhate contradictory, but coding is most
+        satisfying and engaging when it leads to solving complex problems. And for me, those two fields provide the
+        most interesting puzzles.
         <br /><br />
-        Beyond coding I enjoy photography, disc golf, video games, and anything that
-        takes me to the mountains, forests, and deserts of Oregon, my home state.
-      </p>
+        The diversity of programming is a constant reward for my desire to learn. I'm earnest
+        in my drive to continually improve as a developer and take pride in writing, clean, organized, scalable code.
+        I have a mobile-first mindest for responsive design with experience using modern tooling and many of today's
+        most popular languages/frameworks.
+        <br /><br />
+        Beyond coding I enjoy cooking, photography, disc golf, video games, and anything that
+        takes me to the mountains, forests, and deserts of the Pacific Northwest.
+      </span>
     </div>
 
-    <div id="projects">
+    <div id="projects" class="section">
+      <h2>Projects</h2>
+      <div class="line"></div>
       <div class="project-item" id="clowder">
-        <img alt="screenshot of web app" src="project_screenshots/clowder.jpg">
-        <p>
+        <img alt="screenshot of web app" src="images/project_screenshots/clowder.jpg">
+        <span>
 
-        </p>
+        </span>
         <a></a>
       </div>
 
       <div class="project-item" id="adventure">
-        <img alt="screenshot of web app" src="project_screenshots/adventure.jpg">
-        <p>
+        <img alt="screenshot of web app" src="images/project_screenshots/adventure.jpg">
+        <span>
 
-        </p>
+        </span>
         <a></a>
       </div>
 
       <div class="project-item" id="gophercoin">
         <img>
-        <p>
+        <span>
 
-        </p>
+        </span>
+
         <a></a>
       </div>
 
       <div class="project-item" id="bookmarks">
-        <p>
+        <span>
 
-        </p>
+        </span>
         <a></a>
       </div>
     </div>
-
   </main>
 
   <footer role="contentinfo" class="site-footer">
-    <p>Last updated on 3/16/2019</p>
+    <span>Last updated on 4/07/2019</span> <br />
+    <span>Icons made by <a href="https://www.flaticon.com/authors/dave-gandy">Dave Gandy</a> and
+      <a href="https://www.flaticon.com/authors/simpleicon">SimpleIcon</a>
+      from flaticon.com </span>
   </footer>
-  <!--scrpts go here -->
+
+  <script src="index.js"></script>
+
 </body>
 
 </html>

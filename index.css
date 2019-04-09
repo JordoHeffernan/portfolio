@@ -1,0 +1,195 @@
+body {
+  font-family: 'Roboto Slab', serif;
+  margin: 0;
+  text-align: justify;
+}
+
+h1 {
+  font-family: 'IBM Plex Mono', monospace;
+  font-weight: bold;
+  /* font-size: 20px; */
+  margin: auto 0;
+}
+
+h2 {
+  font-family: 'IBM Plex Mono', sans-serif;
+  font-weight: 700;
+  margin: auto 0;
+  text-align: center;
+  padding: 10px 10px 0px
+}
+
+.line {
+  border-top: solid 3px black;
+  width: 60%;
+  margin: 0 auto;
+  margin-bottom: 10px;
+}
+
+header {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  height: 200px;
+  background-image: url('images/header-background.png');
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+#contact {
+  
+  width: 164px;
+  margin: 0 auto;
+
+}
+
+.contact-link > img {
+  max-width: 38px;
+}
+
+#about {
+  box-shadow: 0 -30px 20px white;
+  padding: 10px 40px;
+}
+
+#about > span {
+  font-size: 22px;
+}
+
+#profile-pic {
+  width: 320px;
+  border: solid 3px black;
+  padding: 6px;
+  display: block;
+  margin-top: -60px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#projects{
+  padding-left: 10px;
+  background-color: #f1f1f1;
+  box-shadow: 0 30px 30px white inset, 0 -30px 30px white inset;
+  
+}
+
+.project-item > img {
+  max-width: 400px;
+}
+
+.dropbtn {
+  padding: 8px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+  background-color: lightgrey;
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd
+}
+
+.show {
+  display:flex;
+  flex-direction: column;
+}
+
+.dropdown img {
+  max-height: 100%;
+  max-width: 20px;
+}
+
+footer {
+  padding: 20px;
+  width: 90%;
+  margin: 10px auto;
+  border-top: solid black 1px;
+  border-bottom: solid black 1px;
+  text-align: center;
+  background-color: white;
+}
+
+.blink {
+  -webkit-animation: 1.2s blink step-end infinite;
+  -moz-animation: 1.2s blink step-end infinite;
+  -ms-animation: 1.2s blink step-end infinite;
+  -o-animation: 1.2s blink step-end infinite;
+  animation: 1.2s blink step-end infinite;
+}
+
+@keyframes "blink" {
+  from, to {
+    color: transparent;
+  }
+  50% {
+    color: black;
+  }
+}
+
+@-moz-keyframes blink {
+  from, to {
+    color: transparent;
+  }
+  50% {
+    color: black;
+  }
+}
+
+@-webkit-keyframes "blink" {
+  from, to {
+    color: transparent;
+  }
+  50% {
+    color: black;
+  }
+}
+
+@-ms-keyframes "blink" {
+  from, to {
+    color: transparent;
+  }
+  50% {
+    color: black;
+  }
+}
+
+@-o-keyframes "blink" {
+  from, to {
+    color: transparent;
+  }
+  50% {
+    color: black;
+  }
+}
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+  #profile-pic {margin-top: 0px;}
+  #about > span {
+    font-size: 16px;
+  }
+	}
