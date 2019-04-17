@@ -134,6 +134,29 @@ footer {
   background-color: white;
 }
 
+#projects {
+  height: 400px;
+  max-height: 400px;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+}
+
+.project-item {
+  display: inline-block;
+}
+
+.project-item img {
+  margin-right: 10px;
+}
+
+.project-description {
+  /* display: inline; */
+  white-space: wrap;
+  white-space: normal;
+  width: 10px;
+}
+
 .blink {
   -webkit-animation: 1.2s blink step-end infinite;
   -moz-animation: 1.2s blink step-end infinite;
