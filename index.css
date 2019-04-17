@@ -132,7 +132,7 @@ footer {
 }
 
 #projects::-webkit-scrollbar {
-  height: 4px;
+  height: 6px;
   background-color: #F5F5F5;
 } 
 
