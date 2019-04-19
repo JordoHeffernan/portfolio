@@ -12,6 +12,8 @@
   <link
     href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono|Press+Start+2P|Roboto+Slab|Source+Code+Pro|Special+Elite"
     rel="stylesheet">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
 </head>
 
 <body>
@@ -62,12 +64,12 @@
     </div>
 
     <h2 class="section-title">Projects</h2>
-    <!-- <div class="line"></div> -->
-    <div id="projects" class="section">
-      <div class="project-item" id="cyoa">
+    <div class="line"></div>
+    <div id="projects" class="section projects">
+      <div class="project-item" id="learnVenture">
         <h3>LearnVenture</h3>
         <img ALIGN="left" alt="screenshot of web app" src="images/project_screenshots/cyoa.jpg">
-        <span class="project-description">
+        <span class="project-description hide" id="learnVenture-desc">
           <h4>Role:</h4> I was the product lead on this project as part of a 5 person team.<br />
           <h4>Description:</h4> LearnVenture is a website for making, sharing, and following
           create-your-own-adventure style experiences with an emphasis on imparting knowledge. It is aimed at helping
@@ -77,31 +79,45 @@
           <br />
           <h4>Code:</h4> <a target="_blank"
             href="https://github.com/thinkful-ei27/client-5NodeBodies">github.com/client-5NodeBodies</a>
+          <h4>Tech Stack:</h4>
+          <dl>
+            <dd>React/Redux</dd>
+            <dd>d3 Cytoscape</dd>
+            <dd>Node.JS/Express</dd>
+            <dd>MongoDB/Mongoose</dd>
+            <dd>Enzyme/Jest/Chai/Mocha</dd>
+          </dl>
         </span>
-        <a></a>
       </div>
 
       <div class="project-item" id="clowder">
         <h3>Clowder Events</h3>
         <img ALIGN="left" alt="screenshot of web app" src="images/project_screenshots/clowder.jpg">
-        <span class="project-description">
+        <span class="project-description hide" id="clowder-desc">
           <h4>Role:</h4> Sole Contributer<br />
-          <h4>Description:</h4> Clowder is a web app for event planning. Most people do a lot of their event planning
-          and coordinating on social media platforms that are note designed to facilitate that kind of engagement.
-          Clowder seeks to simplify and streamline event planning by ditching the bells and whistles of other platforms.
+          <h4>Description:</h4> Clowder is a web app for event planning. Most people do their event
+          planning/coordinating on social media platforms that are not well suited to that task.
+          Clowder simplifies and streamlines event planning by ditching the bells and whistles of other platforms.
           Make an event, share the event. Go to the event.<br />
           <h4>Live Link:</h4> <a target="_blank" href="http://www.clowderevents.com/">www.ClowderEvents.com</a>
           <br />
           <h4>Code:</h4> <a target="_blank"
             href="https://github.com/JordoHeffernan/clowderEvents-app-client">github.com/clowderEvents</a>
+          <h4>Tech Stack: </h4>
+          <dl>
+            <dd>React/Redux</dd>
+            <dd>Redux Form</dd>
+            <dd>moment.js</dd>
+            <dd>Node.JS/Express</dd>
+            <dd>MongoDB/Mongoose</dd>
+          </dl>
         </span>
-        <a></a>
       </div>
 
       <div class="project-item" id="adventure">
         <h3>Adventure Journal</h3>
         <img ALIGN="left" alt="screenshot of web app" src="images/project_screenshots/adventure.jpg">
-        <span class="project-description">
+        <span class="project-description hide" id="adventure-desc">
           <h4>Role:</h4> Sole Contributer<br />
           <h4>Description:</h4> An easy to use personal journal to record your adventures around the globe or just down
           the block. Easy keep track of your travels with folders to sort by trip and add tags to each entry for even
@@ -111,33 +127,45 @@
           <br />
           <h4>Code:</h4> <a target="_blank"
             href="https://github.com/JordoHeffernan/adventure-journal">github.com/adventure-journal</a>
+          <h4>Tech Stack:</h4>
+          <dl>
+            <dd>javascript</dd>
+            <dd>jQuery</dd>
+            <dd>HTML</dd>
+            <dd>CSS3</dd>
+            <dd>Node.JS/Express</dd>
+            <dd>MongoDB/Mongoose</dd>
+          </dl>
         </span>
-        <a></a>
       </div>
 
       <div class="project-item" id="gophercoin">
         <h3>Gophercoin</h3>
         <img ALIGN="left" alt="screenshot of web app" src="images/project_screenshots/cyoa.jpg">
-        <span class="project-description">
+        <span class="project-description hide" id="gophercoin-desc">
           <h4>Role:</h4> Sole Contributer<br />
           <h4>Description:</h4> This was mostly just a fun project to help me learn Python as well as develop a better
           understanding of how blockchains work. I'm currently working on building a frontend for that involves a simple
           PyGame which rewards you with validation codes to mine the coin.<br />
           <h4>Code:</h4> <a target="_blank"
             href="https://github.com/JordoHeffernan/gopher-coin">github.com/gopher-coin</a>
+          <h4>Tech Stack:</h4>
+          <dl>
+            <dd>Python</dd>
+            <dd>Flask</dd>
+            <dd>PyCrypto</dd>
+          </dl>
         </span>
-        <a></a>
       </div>
 
       <!-- <div class="project-item" id="bookmarks">
-        <span class="project-description">
+        <span class="project-description hide">
           Donec consequat ultrices dapibus. Fusce ipsum metus, accumsan quis vestibulum vel, mattis nec lorem.
           Pellentesque accumsan fermentum lacus vitae porttitor. Pellentesque placerat lobortis elit finibus euismod.
           Aenean ornare maximus ante id malesuada. Nunc ut sollicitudin est, a sollicitudin libero. Sed ullamcorper erat
           sit amet malesuada sodales. Vivamus pellentesque, eros vel tincidunt iaculis, eros ipsum aliquet felis, eget
           porta est est ut urna.
         </span>
-        <a></a>
       </div> -->
     </div>
   </main>
@@ -149,7 +177,12 @@
       from flaticon.com </span>
   </footer>
 
-  <script src="index.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+
+  <script type="text/javascript" src="scripts/portfolio.js"></script>
+  <script type="text/javascript" src="scripts/index.js"></script>
+
 
 </body>
 

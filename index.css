@@ -6,27 +6,27 @@ body {
 
 h1 {
   font-family: 'IBM Plex Mono', monospace;
-  font-weight: bold;
   /* font-size: 20px; */
   margin: auto 0;
 }
 
 h2 {
   font-family: 'IBM Plex Mono', sans-serif;
-  font-weight: 700;
+  font-weight: 900;
   margin: auto 0;
   text-align: center;
   padding: 10px 10px 0px
 }
 
 h3 {
+  font-family: 'IBM Plex Mono', sans-serif;
   margin-block-start: 0;
     margin-block-end: 3px;
     font-size: 24px;
+    font-weight: 500;
 }
 
 h4 {
-  font-weight: bold;
   font-size: 1.1em;
   margin-block-start: 0;
   margin-block-end: 0;
@@ -84,25 +84,36 @@ header {
 }
 
 #projects{
-  background-color: #f1f1f1;
   box-shadow: 0 30px 30px white inset, 0 -30px 30px white inset;
-  height: 362px;
-  max-height: 362px;
+  height: 460px;
+  max-height: 460px;
   overflow-x: scroll;
   overflow-y: hidden;
   white-space: nowrap;
   padding: 0 15px 0 15px;
 }
 
+dl, dd {
+  margin-inline-start: 0px;
+  margin-top: 0px;
+  overflow: hidden;
+}
+
 .project-item {
   display: inline-block;
   margin-right: 10px;
   vertical-align:top;
+  border: solid 2px #b1b1b1;
+  padding: 0 10px 10px 10px;
+}
+
+.project-item img:hover {
+  cursor: pointer;
 }
 
 .project-item img {
-  margin-right: 10px;
   max-width: 400px;
+  margin-right: 5px;
 }
 
 .project-description {
@@ -111,7 +122,8 @@ header {
   white-space: normal;
   width: 10px;
   overflow: auto;
-  text-align: justify
+  text-align: justify;
+  font-size: 16px;
 }
 
 footer {
@@ -124,12 +136,6 @@ footer {
   background-color: white;
 }
 
-#projects, #projects .project-item
-{
-    transform:rotateX(180deg);
-    -ms-transform:rotateX(180deg); /* IE 9 */
-    -webkit-transform:rotateX(180deg); /* Safari and Chrome */
-}
 
 #projects::-webkit-scrollbar {
   height: 4px;
@@ -150,6 +156,10 @@ footer {
   -ms-animation: 1.2s blink step-end infinite;
   -o-animation: 1.2s blink step-end infinite;
   animation: 1.2s blink step-end infinite;
+}
+
+.hide {
+  display: none;
 }
 
 @keyframes "blink" {
