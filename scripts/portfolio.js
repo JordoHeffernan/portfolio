@@ -20,7 +20,7 @@ const portfolio = (function () {
   function scrollHorizontally(e) {
     e = window.event || e;
     var delta = Math.max(-1, Math.min(1, (e.wheelDelta || -e.detail)));
-    document.getElementById('projects').scrollLeft -= (delta * 40); // Multiplied by 40
+    document.getElementById('projects').scrollLeft -= (delta * 100); // Multiplied by 40
     e.preventDefault();
   }
   if (document.getElementById('projects').addEventListener) {
