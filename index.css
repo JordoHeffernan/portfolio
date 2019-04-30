@@ -47,6 +47,7 @@ h4:first-of-type {
 .line {
   border-top: solid 3px black;
   width: 60%;
+  min-width: 120px;
   margin: 0 auto;
   margin-bottom: 10px;
 }
@@ -93,7 +94,7 @@ main:focus {
 }
 
 .description {
-  max-width: 40em;
+  max-width: 36em;
   font-size: 20px;
   display: block;
   margin: 0 auto;
@@ -121,7 +122,6 @@ main:focus {
   max-height: 500px;
   white-space: nowrap;
   padding: 0 15px 0 15px;
-  width: 60em;
   max-width: 60em;
   margin: 0 auto;
   overflow: auto;
@@ -142,7 +142,7 @@ ul, li {
 }
 
 .project-item {
-  padding: 0 10px 10px 10px;
+  padding: 0 10px 10px 0;
   margin-top: 10px;
   border-bottom: solid 2px #d1d1d1;
 }
@@ -173,6 +173,7 @@ footer {
 
 #projects::-webkit-scrollbar {
   width: 6px;
+  height: 6px;
   border-radius: 10px;
   background-color: #F5F5F5;
 } 
@@ -238,6 +239,21 @@ footer {
   }
 }
 
+@media only screen and (max-width: 650px) {
+  h1 {
+    font-size: 1.8em;
+  }
+}
+@media only screen and (max-width: 590px) {
+  h1 {
+    font-size: 1.6em;
+  }
+}
+@media only screen and (max-width: 450px) {
+  h1 {
+    font-size: 1.4em;
+  }
+}
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
   
   #profile-pic {
