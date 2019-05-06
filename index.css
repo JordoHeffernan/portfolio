@@ -30,6 +30,7 @@ h3 {
     margin-block-end: 3px;
     font-size: 24px;
     font-weight: 500;
+    text-decoration: underline;
 }
 
 h4 {
@@ -88,9 +89,8 @@ main:focus {
   }
 
 .about-me {
-  box-shadow: 0 -30px 30px #d1d1d1, 0 -30px 30px white inset;
-  background: #d1d1d1;
-  padding: 15px 0 40px 0;
+  box-shadow: 0 -30px 30px white, 0 -30px 30px white inset;
+  background: white;
 }
 
 .description {
@@ -114,18 +114,15 @@ main:focus {
 .projects-container {
   box-shadow:  0 -30px 30px #d1d1d1 inset;
   background: white;
-  height: 600px;
+  padding-bottom: 40px;
 }
 
 #projects{
-  height: 500px;
-  max-height: 500px;
-  white-space: nowrap;
-  padding: 0 15px 0 15px;
-  max-width: 60em;
   margin: 0 auto;
-  overflow: auto;
-
+  display: flex;
+  flex-wrap: wrap;
+  width: 1640px;
+  justify-content: center;
 }
 
 ul {
@@ -137,25 +134,25 @@ ul {
 
 ul, li {
   margin-inline-start: 0px;
-  margin-top: 0px;
-  overflow: hidden;
 }
 
 .project-item {
-  padding: 0 10px 10px 0;
-  margin-top: 10px;
-  border-bottom: solid 2px #d1d1d1;
+  padding: 10px;
+  margin: 10px;
+  border: solid 2px #d1d1d1;
+  border-radius: 8px;
+  max-width: 500px;
+  box-shadow:  10px 6px 8px #d1d1d1;
 }
 
-
 .project-item img {
-  max-width: 400px;
+  max-width: 500px;
   margin-right: 5px;
   margin-bottom: 1px;
+  border-radius: 8px;
 }
 
 .project-description {
-  white-space: normal;
   text-align: justify;
   font-size: 16px;
 }
@@ -164,26 +161,9 @@ footer {
   padding: 20px 0;
   margin: 0 auto;
   margin-bottom: 1px;
-  border-top: solid black 1px;
-  border-bottom: solid black 1px;
+  /* border-top: solid black 1px; */
   text-align: center;
   background-color: #d1d1d1;
-}
-
-
-#projects::-webkit-scrollbar {
-  width: 6px;
-  height: 6px;
-  border-radius: 10px;
-  background-color: #F5F5F5;
-} 
-
-#projects::-webkit-scrollbar-thumb {
-  border-radius: 10px;
-	background-color: rgba(0,0,0,.8);}
-
-#projects::-webkit-scrollbar-track {
-  display: none;
 }
 
 .blink {
@@ -193,6 +173,103 @@ footer {
   -o-animation: 1.2s blink step-end infinite;
   animation: 1.2s blink step-end infinite;
 }
+
+@media only screen and (max-width: 1675px) {
+  #projects {
+    width: 1100px;
+  }
+}
+
+@media only screen and (max-width: 1150px) {
+  #projects {
+    width: 560px;
+  }
+}
+
+@media only screen and (max-width: 770px) {
+  .description {
+    margin: 0 10px 0 10px;
+
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  h1 {
+    font-size: 1.8em;
+  }
+}
+
+@media only screen and (max-width: 590px) {
+  h1 {
+    font-size: 1.6em;
+  }
+  #projects {
+    max-width: 100%;
+
+  }
+  .project-item img {
+    max-width: 100%;
+  }
+}
+@media only screen and (max-width: 480px) {
+  h1 {
+    font-size: 1.4em;
+  }
+
+  .description {
+    font-size: 16px;
+  }
+  .project-description {
+    font-size: 14px;
+  }
+}
+
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+  
+  #profile-pic {
+    margin-top: 0;
+    width: 300px;
+  }
+
+  h1 {
+    font-size: 1.8em;
+  }
+
+  h3 {
+    font-size: 20px;
+  }
+
+  #projects {
+    width: 90%;
+    margin: 0 auto;  
+  }
+
+  .projects-container {
+    box-shadow:  0 -30px 30px #d1d1d1 inset, 0 30px 30px white inset;
+  }
+
+  .project-item img {
+    max-width: 100%;
+  }
+
+  .description {
+    margin: 0 10px 0 10px;
+    font-size: 14px;
+  }
+
+  .about-me {
+    padding-bottom: 0;
+    box-shadow: 0 -30px 30px white
+
+  }
+
+  footer {
+    font-size: 12px;
+    text-align: center;
+  }
+
+  }
 
 @keyframes "blink" {
   from, to {
@@ -239,70 +316,21 @@ footer {
   }
 }
 
-@media only screen and (max-width: 650px) {
-  h1 {
-    font-size: 1.8em;
-  }
-}
-@media only screen and (max-width: 590px) {
-  h1 {
-    font-size: 1.6em;
-  }
-}
-@media only screen and (max-width: 450px) {
-  h1 {
-    font-size: 1.4em;
-  }
-}
-@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
-  
-  #profile-pic {
-    margin-top: 0;
-    width: 300px;
-  }
+  /* 
+#projects::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+  border-radius: 10px;
+  background-color: #F5F5F5;
+} 
 
-  h1 {
-    font-size: 1.8em;
-  }
+#projects::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+	background-color: rgba(0,0,0,.8);}
 
-  h3 {
-    font-size: 20px;
-  }
-
-  #projects {
-    width: 90%;  
-  }
-
-  .projects-container {
-    box-shadow:  0 -30px 30px #d1d1d1 inset, 0 30px 30px #d1d1d1 inset;
-  }
-
-  .project-item {
-    width: 80%;
-    max-width: 80%;
-  }
-
-  .project-item img {
-    max-width: 100%;
-  }
-
-  .description {
-    width: 90%;
-    font-size: 14px;
-  }
-
-  .about-me {
-    padding-bottom: 0;
-    box-shadow: 0 -30px 30px #d1d1d1
-
-  }
-
-  footer {
-    font-size: 12px;
-    text-align: center;
-  }
-
-  }
+#projects::-webkit-scrollbar-track {
+  display: none;
+} */
   
   /* .dropbtn {
     padding: 8px;
