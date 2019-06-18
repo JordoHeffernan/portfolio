@@ -15,12 +15,32 @@ const portfolio = (function () {
     });
   }
 
+
+
+  function scrollHorizontally(e) {
+    e = window.event || e;
+    var delta = Math.max(-1, Math.min(1, (e.wheelDelta || -e.detail)));
+    document.getElementById('projects').scrollLeft -= (delta * 100); // Multiplied by 40
+    e.preventDefault();
+  }
+  if (document.getElementById('projects').addEventListener) {
+    // IE9, Chrome, Safari, Opera
+    document.getElementById('projects').addEventListener("mousewheel", scrollHorizontally, false);
+    // Firefox
+    document.getElementById('projects').addEventListener("DOMMouseScroll", scrollHorizontally, false);
+  } else {
+    // IE 6/7/8
+    document.getElementById('projects').attachEvent("onmousewheel", scrollHorizontally);
+  }
+
   function bindEventListeners() {
     handleProjectItemClick();
+    scrollHorizontally();
   }
 
   return {
-    bindEventListeners: bindEventListeners
+    bindEventListeners: bindEventListeners,
+
   };
 
 }())
